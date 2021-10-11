@@ -46,12 +46,13 @@ ul {
 
 .event-main {
   width: 90vw;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .event-title-main {
@@ -78,9 +79,9 @@ ul {
 .event-date {
   font-size: 2.2rem;
   font-weight: bold;
-  margin-bottom: 14rem;
 }
 
 .event-location {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
