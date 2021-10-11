@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #272a31;
+  color: #414141;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -33,6 +33,8 @@ ul {
   border-radius: 25px;
   margin-bottom: 3rem;
 }
+
+/* ------------HOME PAGE---------------- */
 
 /* ---------Mobile version-------------- */
 
@@ -62,9 +64,7 @@ ul {
 
 .event-brif {
   width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
+  margin: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -85,10 +85,9 @@ ul {
 
 .event-description {
   font-size: 1.5rem;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1rem;
   margin-bottom: 3rem;
+  border: 1px solid #b39200;
 }
 
 .event-date {
@@ -99,7 +98,6 @@ ul {
 
 .event-location {
   font-size: 1.5rem;
-  margin-bottom: 4rem;
 }
 
 /* Main Program */
@@ -150,6 +148,7 @@ ul {
   width: 25rem;
   height: 5rem;
   color: #fff;
+  cursor: pointer;
 }
 
 /* Exhibition Sections */
@@ -163,10 +162,16 @@ ul {
   margin-left: auto;
 }
 
+.exhib-sections .title,
+.exhib-section-title {
+  color: #272a31;
+}
+
 .exhib-section-list {
   width: 97%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -195,6 +200,7 @@ ul {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
+  color: #272a31;
 }
 
 .exhib-section-brief {

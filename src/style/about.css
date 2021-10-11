@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #414141;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --------------ABOUT PAGE-------------- */
+
+/* ---------Mobile version-------------- */
+
+.wrapper {
+  background-image: url('../resources/360_F_355140486_LyyicONTn315Xs5nauDWCoL6n6ah2OxE.jpg');
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.menu-button-mobile {
+  border: none;
+  background: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/*  Event brief */
+
+.header {
+  width: 95vw;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.event-about {
+  width: 90vw;
+  margin: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.event-about-title-main {
+  color: #ec5242;
+  font-size: 1.7rem;
+}
+
+.event-about-title-second {
+  color: #ec5242;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+  margin-bottom: 4rem;
+}
+
+.about-parag {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  border: 1px solid #b39200;
+  background-color: #ffaf014b;
+}
+
+.about-parag-contact {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.email:link {
+  color: initial;
+}
+
+.email:visited {
+  color: initial;
+}
