@@ -47,6 +47,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 99%;
 }
 
 /* Navigation */
@@ -67,7 +68,6 @@ ul {
 /*  Event brief */
 
 .event-about {
-  width: 90vw;
   margin: 4rem 1rem;
   display: flex;
   flex-direction: column;
@@ -108,12 +108,15 @@ ul {
   margin-right: 1rem;
 }
 
-.email:link {
+.email:link,
+.email:visited {
   color: initial;
 }
 
-.email:visited {
+.email:hover,
+.email:active {
   color: initial;
+  text-decoration: none;
 }
 
 .company-about {
@@ -130,6 +133,15 @@ ul {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #272a31;
+}
+
+.logo {
+  border: 1px solid #b39200;
+  background-color: #ffaf014b;
+  margin: 0 1rem;
+  width: 90%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .past-exhibition-title {
@@ -219,13 +231,20 @@ ul {
 .closing-footer {
   width: 100%;
   height: 15rem;
-  padding-top: 5rem;
-  padding-right: 3rem;
-  padding-left: 13rem;
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   background-color: #ffaf014b;
 }
 
 .closing-footer h3 {
   font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.logo-footer {
+  max-height: 100%;
+  margin-left: 1rem;
 }
