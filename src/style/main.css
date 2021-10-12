@@ -111,6 +111,8 @@ ul {
   flex-direction: column;
   align-items: center;
   padding: 4rem 0.5rem;
+  width: 95vw;
+  margin: 0;
   color: #d3d3d3;
   background-color: #272a31;
 }
@@ -139,6 +141,10 @@ ul {
   color: #ec5242;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.active-item {
+  border: 2px solid #d3d3d3;
 }
 
 .main-icon {
@@ -222,6 +228,61 @@ ul {
   font-size: 1rem;
 }
 
+/* Footer */
+
+.opening-footer {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #d3d3d3;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.partner {
+  font-size: 1.9rem;
+  color: #d3d3d3;
+}
+
+.closing-footer {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ffaf014b;
+}
+
+.closing-footer h3 {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.logo-footer {
+  max-height: 100%;
+  margin-left: 1rem;
+}
+
 /* --------------Desktop version------------- */
 
 @media only screen and (min-width: 768px) {
@@ -266,12 +327,13 @@ ul {
   }
 
   .logo-header-img {
+    background-color: #333;
     width: 100%;
   }
 
   .inner-nav-parent {
     width: 100%;
-    padding-right: 6rem;
+    padding-right: 8rem;
     display: flex;
     justify-content: flex-end;
   }
@@ -280,25 +342,34 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-    font-size: 1.5rem;
+    gap: 10%;
+    font-size: 1.7rem;
   }
 
-  .menu-btn {
-    cursor: pointer;
+  .menu-btn:link,
+  .menu-btn:visited {
+    color: inherit;
+    text-decoration: none;
   }
 
-  .active {
+  .menu-btn:hover,
+  .menu-btn:active {
+    border-bottom: 1px solid #ec5242;
+  }
+
+  .active:link,
+  .active:visited {
     color: #ec5242;
   }
 
   .header-btn {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #ec5242;
     border: 4px solid #ec5242;
     padding: 5px;
     cursor: pointer;
     background-color: inherit;
+    white-space: nowrap;
   }
 
   /*  Event brief */
@@ -478,5 +549,23 @@ ul {
 
   .exhib-section-description {
     font-size: 1.4rem;
+  }
+
+  /* Footer */
+
+  .opening-footer {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .footer-title {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #d3d3d3;
+  }
+
+  .closing-footer h3 {
+    font-size: 1.7rem;
   }
 }

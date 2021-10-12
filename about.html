@@ -21,14 +21,43 @@
           <button type="button" class="menu-button-mobile">
             <ion-icon class="menu-icon-mobile" name="menu-outline"></ion-icon>
           </button>
+          <ul class="main-nav-list">
+            <li>
+              <figure class="logo-header-figure">
+                <img
+                  src="./src/resources/logo.png"
+                  class="logo-header-img"
+                  alt="company logo"
+                />
+              </figure>
+            </li>
+            <li class="inner-nav-parent">
+              <ul class="inner-nav-list">
+                <li><a class="menu-btn active" href="#">About</a></li>
+                <li><a class="menu-btn" href="#">Program</a></li>
+                <li><a class="menu-btn" href="#">Forum</a></li>
+                <li><a class="menu-btn" href="#">Sponsor</a></li>
+                <li><a class="menu-btn" href="#">News</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="header-btn" type="submit">Get a ticket</button>
+            </li>
+          </ul>
         </nav>
       </header>
       <main class="event-main">
         <section class="event-about">
-          <h1 class="event-about-title-main">Egypt: The Time of Pharaohs</h1>
-          <h2 class="event-about-title-second">
+          <div class="home-div">
+            <a class="home-anchor" href="#"
+              ><i class="ph-house-line home-icon"></i> > Home</a
+            >
+          </div>
+          <h2 class="event-about-title-main">Egypt: The Time of Pharaohs</h2>
+          <h1 class="event-about-title-second">
             Exhibition 2022 &mdash; London: Ancient Egypt
-          </h2>
+          </h1>
+          <hr class="small-title-bar display-small-bar" />
           <p class="about-parag">
             Global Exhibitions LTD gets together the community of experts,
             academics, and voluntears for the porpouse to bring to people from
@@ -48,17 +77,18 @@
         <section class="company-about">
           <h3 class="company-about-title">Global Exhibitions LTD</h3>
           <hr class="small-title-bar" />
-          <p class="about-parag-contact">
+          <p class="about-parag-contact company-parag">
             The pourpose of Global Exhibitions LTD is to facilitaty and organize
             exhibitions and events of a wide variaty, no matter which city,
             country or continent
           </p>
           <img class="logo" src="./src/resources/logo.png" alt="company logo" />
+          <hr class="huge-bar" />
           <h4 class="past-exhibition-title">
             See different exhibitions organized by Global Exhibitions LTD
           </h4>
           <hr class="small-title-bar" />
-          <p class="about-parag-contact">
+          <p class="about-parag-contact company-parag">
             Take a look at the last two exhibitions organised by us which took
             place in Athens and Beijing.
           </p>
@@ -76,7 +106,7 @@
             </div>
             <div class="img-container-div">
               <img
-                src="./src/resources/beijing-temple-of-heaven.jpg"
+                src="./src/resources/beijing.jpg"
                 alt="Temple of Heaven in Beijing"
                 class="past-exhib-img"
               />
