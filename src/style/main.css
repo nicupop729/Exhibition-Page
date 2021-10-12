@@ -60,6 +60,10 @@ ul {
   cursor: pointer;
 }
 
+.main-nav-list {
+  display: none;
+}
+
 /*  Event brief */
 
 .event-brif {
@@ -212,4 +216,64 @@ ul {
 
 .exhib-section-description {
   font-size: 1rem;
+}
+
+/* --------------Desktop version------------- */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: 100vw;
+    margin-top: 0;
+    background-color: #ffaf014b;
+    padding-right: 10%;
+  }
+
+  .menu-button-mobile {
+    display: none;
+  }
+
+  .main-nav-list {
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    place-items: center;
+  }
+
+  .logo-header-figure {
+    padding-left: 10%;
+    width: 7rem;
+
+    cursor: pointer;
+  }
+
+  .logo-header-img {
+    width: 100%;
+  }
+
+  .inner-nav-parent {
+    width: 100%;
+    padding-right: 6rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .inner-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-size: 1.5rem;
+  }
+
+  .inner-nav-list li {
+    cursor: pointer;
+  }
+
+  .header-btn {
+    font-size: 1.5rem;
+    color: #ec5242;
+    border: 4px solid #ec5242;
+    padding: 5px;
+    cursor: pointer;
+    background-color: inherit;
+  }
 }
