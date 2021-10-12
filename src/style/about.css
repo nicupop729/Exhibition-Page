@@ -20,6 +20,24 @@ ul {
   list-style: none;
 }
 
+.big-title-bar {
+  height: 2px;
+  width: 50px;
+  background-color: #ec5242;
+  border: #ec5242;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.small-title-bar {
+  height: 2px;
+  width: 20px;
+  background-color: #ec5242;
+  border: #ec5242;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
 /* --------------ABOUT PAGE-------------- */
 
 /* ---------Mobile version-------------- */
@@ -31,6 +49,14 @@ ul {
   gap: 3rem;
 }
 
+/* Navigation */
+
+.header {
+  width: 95vw;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
 .menu-button-mobile {
   border: none;
   background: none;
@@ -40,15 +66,9 @@ ul {
 
 /*  Event brief */
 
-.header {
-  width: 95vw;
-  margin-left: auto;
-  margin-top: 1rem;
-}
-
 .event-about {
   width: 90vw;
-  margin: 3rem 1rem;
+  margin: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,10 +101,11 @@ ul {
 
 .about-parag-contact {
   font-size: 1.5rem;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 3rem;
 }
 
 .email:link {
@@ -93,4 +114,119 @@ ul {
 
 .email:visited {
   color: initial;
+}
+
+.company-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.company-about-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #272a31;
+}
+
+.past-exhibition-title {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #272a31;
+}
+
+.imgs-container-div {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img-container-div {
+  position: relative;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5342c0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+.layer h3 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.layer p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.past-exhib-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+.opening-footer {
+  width: 100%;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #d3d3d3;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.partner {
+  font-size: 1.9rem;
+  color: #d3d3d3;
+}
+
+.closing-footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #fff;
+  padding-top: 5rem;
+  padding-right: 3rem;
+  padding-left: 13rem;
+  text-align: left;
+  background-color: #ffaf014b;
+}
+
+.closing-footer h3 {
+  font-size: 1.4rem;
 }

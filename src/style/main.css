@@ -47,6 +47,12 @@ ul {
 
 /* Navigation */
 
+.header {
+  width: 95vw;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
 .menu-button-mobile {
   border: none;
   background: none;
@@ -55,12 +61,6 @@ ul {
 }
 
 /*  Event brief */
-
-.header {
-  width: 95vw;
-  margin-left: auto;
-  margin-top: 1rem;
-}
 
 .event-brif {
   width: 90vw;
