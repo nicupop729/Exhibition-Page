@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://nicupop729.github.io/Exhibition-Page/)
+[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
