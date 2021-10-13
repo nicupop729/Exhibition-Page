@@ -178,10 +178,6 @@ ul {
   cursor: pointer;
 }
 
-.main-program-item:hover {
-  border: 2px solid #d3d3d3;
-}
-
 .main-program-item h4 {
   color: #ec5242;
   font-size: 1.2rem;
@@ -514,7 +510,6 @@ ul {
     color: #ec5242;
     font-size: 1.7rem;
     font-weight: bold;
-    margin-bottom: 15px;
   }
 
   .main-program-item p {
