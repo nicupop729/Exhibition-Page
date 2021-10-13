@@ -15,7 +15,7 @@ The project holds 2 pages: Home page and About page. It is responsive and works 
 
 ## Live Demo
 
-[GitHub Pages live demo link](https://nicupop729.github.io/Exhibition-Page/)
+[GitHub Pages live demo link](https://nicupop729.github.io/Exhibition-Page/) <br />
 [Netlify live demo link](https://exhibition-page.netlify.app/)
 
 ### Deployment
