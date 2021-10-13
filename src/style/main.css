@@ -178,14 +178,14 @@ ul {
   cursor: pointer;
 }
 
+.main-program-item:hover {
+  border: 2px solid #d3d3d3;
+}
+
 .main-program-item h4 {
   color: #ec5242;
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.active-item {
-  border: 2px solid #d3d3d3;
 }
 
 .main-icon {
@@ -397,10 +397,6 @@ ul {
   .menu-btn:hover,
   .menu-btn:active {
     border-bottom: 1px solid #ec5242;
-  }
-
-  .active:link,
-  .active:visited {
     color: #ec5242;
   }
 
@@ -470,6 +466,7 @@ ul {
     padding-right: 10%;
     color: #d3d3d3;
     background-color: #272a31;
+    height: 60rem;
   }
 
   .main-program-list {
@@ -479,6 +476,7 @@ ul {
     justify-content: center;
     gap: 0.7rem;
     margin-bottom: 4rem;
+    height: 30rem;
   }
 
   .main-program-item {
@@ -504,6 +502,7 @@ ul {
 
   .main-program-item p {
     font-size: 1.4rem;
+    margin-top: 2.3rem;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 10px;
@@ -548,8 +547,7 @@ ul {
     width: 100%;
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-row-gap: 4rem;
     grid-column-gap: 2rem;
   }
