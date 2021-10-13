@@ -212,7 +212,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0.5rem;
+  padding: 4rem 2rem 4rem 5rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -563,6 +563,7 @@ ul {
   .exhib-section-list {
     width: 100%;
     margin-top: 4rem;
+    flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-row-gap: 4rem;
