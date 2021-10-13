@@ -237,8 +237,25 @@ ul {
 }
 
 .exhib-section-img-div {
+  position: relative;
   height: 7rem;
   width: 7rem;
+  z-index: 1;
+}
+
+.pattern-div {
+  background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
+  background-size: 20px 20px;
+  /* z-index: 1; */
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  z-index: -1;
 }
 
 .exhib-section-img {

@@ -116,6 +116,9 @@ const loadSections = function (sections) {
     const exhibSsectionImgDiv = createMyElement('div');
     exhibSsectionImgDiv.classList.add('exhib-section-img-div');
 
+    const patternDiv = createMyElement('div');
+    patternDiv.className = 'pattern-div';
+
     const exhibSectionImg = createMyElement('img');
     exhibSectionImg.classList.add('exhib-section-img');
     exhibSectionImg.src = section.image;
@@ -138,6 +141,7 @@ const loadSections = function (sections) {
 
     const exhibSectionList = getMyElement('.exhib-section-list');
 
+    exhibSsectionImgDiv.appendChild(patternDiv);
     exhibSsectionImgDiv.appendChild(exhibSectionImg);
     exhibSectionContentDiv.appendChild(exhibSectionTitle);
     exhibSectionContentDiv.appendChild(exhibSectionBrief);
