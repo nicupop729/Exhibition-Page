@@ -68,6 +68,47 @@ ul {
   display: none;
 }
 
+.mobile-nav-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  border-right: 2rem solid #ec5242;
+  z-index: 1;
+  padding-top: 2rem;
+  /* padding-left: 10%; */
+}
+
+.mobile-nav-div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-left: 20%;
+  height: 40%;
+}
+
+.mobile-nav-div ul li a:link,
+.mobile-nav-div ul li a:visited {
+  font-size: 2rem;
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.mobile-nav-div ul li a:active {
+  color: #ec5242;
+}
+
+#closeIcon {
+  float: right;
+  margin-right: 10%;
+  margin-top: 0;
+  cursor: pointer;
+  color: #ec5242;
+  font-size: large;
+}
+
 /*  Event brief */
 
 .event-about {
@@ -304,12 +345,13 @@ ul {
 
   .logo-header-figure {
     padding-left: 10%;
+    padding-right: 10%;
     width: 7rem;
     cursor: pointer;
+    background-color: #333;
   }
 
   .logo-header-img {
-    background-color: #333;
     width: 100%;
   }
 
@@ -382,7 +424,7 @@ ul {
   .home-div {
     display: block;
     position: absolute;
-    top: -20%;
+    top: -16%;
     right: 20%;
   }
 
@@ -396,6 +438,10 @@ ul {
   .home-anchor:hover,
   .home-anchor:active {
     border-bottom: 1px solid #ec5242;
+  }
+
+  .small-arrow {
+    color: #ec5242;
   }
 
   .event-about-title-main {
