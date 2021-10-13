@@ -227,7 +227,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .exhib-section-item {
@@ -566,7 +566,8 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-row-gap: 4rem;
-    grid-column-gap: 2rem;
+    grid-column-gap: 7rem;
+    align-items: start;
   }
 
   .exhib-section-item {
