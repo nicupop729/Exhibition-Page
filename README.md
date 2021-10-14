@@ -1,65 +1,38 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Microverse: Capstone Project - Exhibition Page
 
-> One paragraph statement about the project.
+> This project is about an art Exhibition titled "Exhibition 2022 &mdash; London: Ancient Egypt" hold next year in London UK. The work was ordered by Global Exhibitions LTD UK.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./src/resources/project-preview.jpg)
 
-Additional description about the project and its features.
+The project holds 2 pages: Home page and About page. It is responsive and works well both on mobile and on desktop
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages: HTML & CSS along with JavaScript;
+- Project hold by GitHub;
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
+[GitHub Pages live demo link](https://nicupop729.github.io/Exhibition-Page/) <br />
+[Netlify live demo link](https://exhibition-page.netlify.app/)
 
 ### Deployment
 
+- Deployed by GitHub Pages and Netlify;
 
+## Author
 
-## Authors
+👤 **Nicolae Pop**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@nicupop729](https://github.com/nicupop729)
+- Twitter: [@nicupop729](https://twitter.com/nicupop729)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolae-pop/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -67,9 +40,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+For inspiration, I to give appropriate credit to **Cindy Shin**, the author of the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 ## 📝 License
 
