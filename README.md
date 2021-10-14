@@ -22,7 +22,7 @@ The project holds 2 pages: Home page and About page. It is responsive and works 
 
 - Deployed by GitHub Pages and Netlify;
 
-## Authors
+## Author
 
 👤 **Nicolae Pop**
 
@@ -37,6 +37,10 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+For inspiration, I to give appropriate credit to **Cindy Shin**, the author of the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 ## 📝 License
 

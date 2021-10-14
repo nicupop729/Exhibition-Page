@@ -4,10 +4,17 @@ const createMyElement = (parameter) => document.createElement(parameter);
 const navDiv = createMyElement('div');
 navDiv.className = 'mobile-nav-div';
 const navList = createMyElement('ul');
+// navList.className = 'mobile-nav-list';
 const navAbout = createMyElement('li');
 const navAboutAnchor = createMyElement('a');
+navAboutAnchor.className = 'toggle-about';
 navAboutAnchor.textContent = 'About';
 navAboutAnchor.href = 'about.html';
+const navHome = createMyElement('li');
+const navHomeAnchor = createMyElement('a');
+navHomeAnchor.className = 'toggle-home';
+navHomeAnchor.textContent = 'Home';
+navHomeAnchor.href = 'index.html';
 const navProgram = createMyElement('li');
 const navProgramAnchor = createMyElement('a');
 navProgramAnchor.textContent = 'Program';
@@ -29,12 +36,14 @@ closeIcon.textContent = 'X';
 closeIcon.id = 'closeIcon';
 
 navAbout.appendChild(navAboutAnchor);
+navHome.appendChild(navHomeAnchor);
 navProgram.appendChild(navProgramAnchor);
 navForum.appendChild(navForumAnchor);
 navSponsor.appendChild(navSponsorAnchor);
 navNews.appendChild(navNewsAnchor);
 
 navList.appendChild(navAbout);
+navList.appendChild(navHome);
 navList.appendChild(navProgram);
 navList.appendChild(navForum);
 navList.appendChild(navSponsor);
@@ -54,8 +63,6 @@ humbergerButton.addEventListener('click', () => {
   navDiv.style.backgroundColor = '#272a31';
   navDiv.style.display = 'block';
 });
-
-// Populate dynamically the Exhibition Sections Section
 
 const exhibSections = [
   {

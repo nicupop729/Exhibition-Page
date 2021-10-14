@@ -34,18 +34,12 @@ ul {
   margin-bottom: 3rem;
 }
 
-/* ------------HOME PAGE---------------- */
-
-/* ---------Mobile version-------------- */
-
 .wrapper {
   background-image: url('../resources/360_F_355140486_LyyicONTn315Xs5nauDWCoL6n6ah2OxE.jpg');
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-
-/* Navigation */
 
 .header {
   width: 95vw;
@@ -58,6 +52,10 @@ ul {
   background: none;
   font-size: 3rem;
   cursor: pointer;
+}
+
+.top-nav-ul {
+  display: none;
 }
 
 .main-nav-list {
@@ -78,7 +76,6 @@ ul {
 .mobile-nav-div ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-top: 5rem;
   padding-left: 20%;
   height: 40%;
@@ -95,6 +92,18 @@ ul {
   color: #ec5242;
 }
 
+.mobile-nav-div ul li {
+  padding-bottom: 2rem;
+}
+
+.mobile-nav-div ul li:first-child {
+  padding-bottom: 0;
+}
+
+.toggle-home {
+  display: none;
+}
+
 #closeIcon {
   float: right;
   margin-right: 10%;
@@ -103,8 +112,6 @@ ul {
   color: #ec5242;
   font-size: large;
 }
-
-/*  Event brief */
 
 .event-brif {
   width: 90vw;
@@ -143,8 +150,6 @@ ul {
 .event-location {
   font-size: 1.5rem;
 }
-
-/* Main Program */
 
 .main-program {
   display: flex;
@@ -201,8 +206,6 @@ ul {
 .see-program {
   display: none;
 }
-
-/* Exhibition Sections */
 
 .exhib-sections {
   display: flex;
@@ -282,8 +285,6 @@ ul {
   font-size: 1rem;
 }
 
-/* Footer */
-
 .opening-footer {
   width: 100%;
   background-color: #333;
@@ -324,7 +325,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: #ffaf014b;
+  background-color: #fff;
 }
 
 .closing-footer h3 {
@@ -336,8 +337,6 @@ ul {
   max-height: 100%;
   margin-left: 1rem;
 }
-
-/* --------------Desktop version------------- */
 
 @media only screen and (min-width: 768px) {
   .title {
@@ -354,14 +353,36 @@ ul {
     margin-bottom: 3rem;
   }
 
-  /* Navigation */
-
   .header {
     width: 100vw;
     margin-top: 0;
     background-color: #ffaf014b;
     padding-right: 10%;
     border-bottom: 1px solid #b39200;
+  }
+
+  .main-nav {
+    width: 100vw;
+  }
+
+  .top-nav-ul {
+    width: 100%;
+    height: 3rem;
+    background-color: #272a31;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 12%;
+  }
+
+  .top-nav-li-anchor:link,
+  .top-nav-li-anchor:visited {
+    font-size: 1.2rem;
+    color: #d3d3d3;
+    text-decoration: none;
   }
 
   .menu-button-mobile {
@@ -371,6 +392,7 @@ ul {
   .main-nav-list {
     display: grid;
     grid-template-columns: 30% 55% 15%;
+    padding-right: 10%;
     place-items: center;
   }
 
@@ -401,8 +423,7 @@ ul {
     font-size: 1.7rem;
   }
 
-  .menu-btn:link,
-  .menu-btn:visited {
+  .menu-btn {
     color: inherit;
     text-decoration: none;
   }
@@ -410,6 +431,10 @@ ul {
   .menu-btn:hover,
   .menu-btn:active {
     border-bottom: 1px solid #ec5242;
+    color: #ec5242;
+  }
+
+  .active {
     color: #ec5242;
   }
 
@@ -422,8 +447,6 @@ ul {
     background-color: inherit;
     white-space: nowrap;
   }
-
-  /*  Event brief */
 
   .event-brif {
     width: 100%;
@@ -443,32 +466,33 @@ ul {
   .event-title-second {
     color: #ec5242;
     font-size: 6rem;
-    font-weight: bold;
+    font-weight: 900;
+    width: 80%;
     line-height: 6rem;
     margin-bottom: 4rem;
-    width: 70%;
   }
 
   .event-description {
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 3rem;
     margin-bottom: 6rem;
     border: 1px solid #b39200;
     width: 70%;
+    color: #535353;
   }
 
   .event-date {
+    color: #535353;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 1rem;
   }
 
   .event-location {
+    color: #535353;
     font-size: 2rem;
     margin-bottom: 8rem;
   }
-
-  /* Main Program */
 
   .main-program {
     display: flex;
@@ -489,7 +513,6 @@ ul {
     justify-content: center;
     gap: 0.7rem;
     margin-bottom: 4rem;
-    height: 30rem;
   }
 
   .main-program-item {
@@ -498,7 +521,7 @@ ul {
     background-color: #3d3d3d;
     flex: 1 1 0;
     width: 0;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .main-icon {
@@ -537,8 +560,6 @@ ul {
   .see-program:active {
     text-decoration: none;
   }
-
-  /* Exhibition Sections */
 
   .exhib-sections {
     display: flex;
@@ -604,8 +625,6 @@ ul {
   .exhib-section-description {
     font-size: 1.4rem;
   }
-
-  /* Footer */
 
   .opening-footer {
     padding-top: 2rem;
