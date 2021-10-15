@@ -40,8 +40,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-For inspiration for design, I need to give appropriate credit to **Cindy Shin**, the author of the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
-For the title I took inspiration inspiration from [Natural History Museumm of Utah's Exhibition about Egypt](https://nhmu.utah.edu/museum/exhibits/egypt-pharaohs).
+For inspiration for design, I need to give appropriate credit to **Cindy Shin**, the author of the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).<br />
+For the title I took inspiration inspiration from [Natural History Museumm of Utah's Exhibition about Egypt](https://nhmu.utah.edu/museum/exhibits/egypt-pharaohs).<br />
 I must give credit to [Microverse](https://www.microverse.org/), the Full-Stack Developer Online School, where I am a student.
 
 
