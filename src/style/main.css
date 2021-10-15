@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #414141;
   width: 100vw;
   overflow-x: hidden;
@@ -35,7 +35,7 @@ ul {
 }
 
 .wrapper {
-  background-image: url('../resources/360_F_355140486_LyyicONTn315Xs5nauDWCoL6n6ah2OxE.jpg');
+  background-image: url("../resources/360_F_355140486_LyyicONTn315Xs5nauDWCoL6n6ah2OxE.jpg");
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -503,7 +503,6 @@ ul {
     padding-right: 10%;
     color: #d3d3d3;
     background-color: #272a31;
-    height: 60rem;
   }
 
   .main-program-list {
