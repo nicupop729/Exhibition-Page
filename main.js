@@ -1,67 +1,34 @@
-const getMyElement = (parameter) => document.querySelector(parameter);
-const createMyElement = (parameter) => document.createElement(parameter);
+const exhibSectionList = document.querySelector('.exhib-section-list');
+const humbergerButton = document.querySelector('.menu-icon-mobile');
 
-const navDiv = createMyElement('div');
-navDiv.className = 'mobile-nav-div';
-const navList = createMyElement('ul');
-// navList.className = 'mobile-nav-list';
-const navAbout = createMyElement('li');
-const navAboutAnchor = createMyElement('a');
-navAboutAnchor.className = 'toggle-about';
-navAboutAnchor.textContent = 'About';
-navAboutAnchor.href = 'about.html';
-const navHome = createMyElement('li');
-const navHomeAnchor = createMyElement('a');
-navHomeAnchor.className = 'toggle-home';
-navHomeAnchor.textContent = 'Home';
-navHomeAnchor.href = 'index.html';
-const navProgram = createMyElement('li');
-const navProgramAnchor = createMyElement('a');
-navProgramAnchor.textContent = 'Program';
-navProgramAnchor.href = '#';
-const navForum = createMyElement('li');
-const navForumAnchor = createMyElement('a');
-navForumAnchor.textContent = 'Forum';
-navForumAnchor.href = '#';
-const navSponsor = createMyElement('li');
-const navSponsorAnchor = createMyElement('a');
-navSponsorAnchor.textContent = 'Sponsor';
-navSponsorAnchor.href = '#';
-const navNews = createMyElement('li');
-const navNewsAnchor = createMyElement('a');
-navNewsAnchor.textContent = 'News';
-navNewsAnchor.href = '#';
-const closeIcon = createMyElement('span');
-closeIcon.textContent = 'X';
-closeIcon.id = 'closeIcon';
-
-navAbout.appendChild(navAboutAnchor);
-navHome.appendChild(navHomeAnchor);
-navProgram.appendChild(navProgramAnchor);
-navForum.appendChild(navForumAnchor);
-navSponsor.appendChild(navSponsorAnchor);
-navNews.appendChild(navNewsAnchor);
-
-navList.appendChild(navAbout);
-navList.appendChild(navHome);
-navList.appendChild(navProgram);
-navList.appendChild(navForum);
-navList.appendChild(navSponsor);
-navList.appendChild(navNews);
-
-navDiv.appendChild(closeIcon);
-navDiv.appendChild(navList);
-
-const humbergerButton = getMyElement('.menu-icon-mobile');
-
-closeIcon.addEventListener('click', () => {
-  navDiv.style.display = 'none';
-});
+const mobileNavHTML = `
+<div class="mobile-nav-div">
+  <span class="close-icon"><ion-icon name="close"></ion-icon></span>
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="about.html">About</a>
+    </li>
+    <li><a href="#">Program</a></li>
+    <li><a href="#">Forum</a></li>
+    <li><a href="#">Sponsor</a></li>
+    <li><a href="#">News</a></li>
+  </ul>
+</div>
+`;
 
 humbergerButton.addEventListener('click', () => {
-  document.body.appendChild(navDiv);
+  document.body.insertAdjacentHTML('afterbegin', mobileNavHTML);
+  const navDiv = document.querySelector('.mobile-nav-div');
+  const closeIcon = document.querySelector('.close-icon');
   navDiv.style.backgroundColor = '#272a31';
   navDiv.style.display = 'block';
+
+  closeIcon.addEventListener('click', () => {
+    navDiv.style.display = 'none';
+  });
 });
 
 const exhibSections = [
@@ -115,47 +82,29 @@ const exhibSections = [
   },
 ];
 
-const loadSections = function (sections) {
+const loadSections = (sections) => {
   sections.forEach((section) => {
-    const exhibSectionItem = createMyElement('li');
-    exhibSectionItem.classList.add('exhib-section-item');
-
-    const exhibSsectionImgDiv = createMyElement('div');
-    exhibSsectionImgDiv.classList.add('exhib-section-img-div');
-
-    const patternDiv = createMyElement('div');
-    patternDiv.className = 'pattern-div';
-
-    const exhibSectionImg = createMyElement('img');
-    exhibSectionImg.classList.add('exhib-section-img');
-    exhibSectionImg.src = section.image;
-    exhibSectionImg.alt = section.alt;
-
-    const exhibSectionContentDiv = createMyElement('div');
-    exhibSectionContentDiv.classList.add('exhib-section-content-div');
-
-    const exhibSectionTitle = createMyElement('h4');
-    exhibSectionTitle.classList.add('exhib-section-title');
-    exhibSectionTitle.textContent = section.name;
-
-    const exhibSectionBrief = createMyElement('p');
-    exhibSectionBrief.classList.add('exhib-section-brief');
-    exhibSectionBrief.textContent = section.brief;
-
-    const exhibSectionDescription = createMyElement('p');
-    exhibSectionDescription.classList.add('exhib-section-description');
-    exhibSectionDescription.textContent = section.description;
-
-    const exhibSectionList = getMyElement('.exhib-section-list');
-
-    exhibSsectionImgDiv.appendChild(patternDiv);
-    exhibSsectionImgDiv.appendChild(exhibSectionImg);
-    exhibSectionContentDiv.appendChild(exhibSectionTitle);
-    exhibSectionContentDiv.appendChild(exhibSectionBrief);
-    exhibSectionContentDiv.appendChild(exhibSectionDescription);
-    exhibSectionItem.appendChild(exhibSsectionImgDiv);
-    exhibSectionItem.appendChild(exhibSectionContentDiv);
-    exhibSectionList.appendChild(exhibSectionItem);
+    const textHTML = `
+    <li class="exhib-section-item">
+      <div class="exhib-section-img-div">
+        <div class="pattern-div"></div>
+        <img
+          class="exhib-section-img"
+          src="${section.image}"
+          alt="${section.alt}"
+        />
+      </div>
+      <div class="exhib-section-content-div">
+        <h4 class="exhib-section-title">${section.name}</h4>
+        <p class="exhib-section-brief">
+        ${section.brief}
+        </p>
+        <p class="exhib-section-description">
+        ${section.description}
+        </p>
+      </div>
+    </li>`;
+    exhibSectionList.insertAdjacentHTML('beforeend', textHTML);
   });
 };
 
