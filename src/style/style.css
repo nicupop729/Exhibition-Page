@@ -280,14 +280,15 @@ ul {
   width: 100%;
   height: auto;
 }
+
 .main-program {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4rem 0.7rem;
-  margin-bottom: 3rem;
   width: 100%;
   margin: 0;
+  margin-bottom: 3rem;
   color: #d3d3d3;
   background-color: #272a31;
 }
@@ -374,7 +375,8 @@ ul {
 }
 
 .pattern-div {
-  background: linear-gradient(315deg, transparent 75%, #d45d55 0) -10px 0,
+  background:
+    linear-gradient(315deg, transparent 75%, #d45d55 0) -10px 0,
     linear-gradient(45deg, transparent 75%, #d45d55 0) -10px 0,
     linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
     linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
