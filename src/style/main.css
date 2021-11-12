@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #414141;
   width: 100vw;
   overflow-x: hidden;
@@ -35,7 +35,7 @@ ul {
 }
 
 .wrapper {
-  background-image: url("../resources/360_F_355140486_LyyicONTn315Xs5nauDWCoL6n6ah2OxE.jpg");
+  background-image: url('../resources/360_F_355140486_LyyicONTn315Xs5nauDWCoL6n6ah2OxE.jpg');
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -104,7 +104,7 @@ ul {
   display: none;
 }
 
-#closeIcon {
+.close-icon {
   float: right;
   margin-right: 10%;
   margin-top: 0;
@@ -243,8 +243,7 @@ ul {
 }
 
 .pattern-div {
-  background:
-    linear-gradient(315deg, transparent 75%, #d45d55 0) -10px 0,
+  background: linear-gradient(315deg, transparent 75%, #d45d55 0) -10px 0,
     linear-gradient(45deg, transparent 75%, #d45d55 0) -10px 0,
     linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
     linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;

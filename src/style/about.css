@@ -101,7 +101,7 @@ ul {
   display: none;
 }
 
-#closeIcon {
+.close-icon {
   float: right;
   margin-right: 10%;
   margin-top: 0;
