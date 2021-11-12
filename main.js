@@ -3,13 +3,13 @@ const humbergerButton = document.querySelector('.menu-icon-mobile');
 
 const mobileNavHTML = `
 <div class="mobile-nav-div">
-  <span class="close-icon"><ion-icon name="close-sharp"></ion-icon></span>
+  <span class="close-icon"><ion-icon name="close"></ion-icon></span>
   <ul>
     <li>
-      <a class="toggle-about" href="about.html">About</a>
+      <a href="index.html">Home</a>
     </li>
     <li>
-      <a class="toggle-home" href="index.html">Home</a>
+      <a href="about.html">About</a>
     </li>
     <li><a href="#">Program</a></li>
     <li><a href="#">Forum</a></li>
